@@ -26,10 +26,6 @@ let notes = [
     }
 ]
 
-app.get('/', (req, res)=>{
-    res.send('<h1>hello world!</h1>')
-})
-
 app.get('/api/notes/:id',(req,res)=>{
     const id = Number(req.params.id)
 
